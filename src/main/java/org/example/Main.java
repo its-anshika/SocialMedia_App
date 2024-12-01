@@ -41,7 +41,7 @@ public class Main {
         System.out.println("Enter user ID to fetch the news feed:");
         int userId = scanner.nextInt();
 
-        // Get and print the news feed for Alice
+        // Get and print the news feed
         List<Post> newsFeed = postService.getNewsFeed(userId);
         if (newsFeed.isEmpty()) {
             System.out.println("No posts available for this user.");
